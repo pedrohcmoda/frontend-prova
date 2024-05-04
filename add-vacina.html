@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar vacin</title>
+    <link rel="stylesheet" href="/assets/styles/criarconta.css">
+    <link rel="stylesheet" href="/assets/styles/addvacina.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="/assets/img/icone-vacina.png" alt="Icone de seringa">
+            <p>MyHealth</p>
+        </div>
+        <div>
+            <button>
+                Minhas vacinas
+            </button>
+            <button>
+                Logout
+            </button>
+        </div>
+    </header>
+    <main>
+        <form onsubmit="login()">
+            <div>
+                <label for="data-vacina">Data da vascinação</label>
+                <input type="date" name="data-vacina" id="data-vacina">
+            </div>
+            <div>
+                <label for="nome-vacina">Vacina</label>
+                <input type="text" name="nome-vacina" id="nome-vacina">
+            </div>
+            <div class="radios">
+                <label class="label-radio" for="dose">Dose</label>
+                <input type="radio" name="dose" id="dose" value="1a"> 1a. Dose
+                <input type="radio" name="dose" id="dose" value="2a"> 2a. Dose
+                <input type="radio" name="dose" id="dose" value="3a"> 3a. Dose
+                <input type="radio" name="dose" id="dose" value="reforco"> Reforço
+                <input type="radio" name="dose" id="dose" value="unica"> Dose 
+            </div>
+            <div>
+                <label for="imagem-vacina">Comprovante da vacina</label>
+                <label class="subir-vacina">
+                    <input type="file"/>
+                    Selecionar imagem...
+                </label>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <label for="prox-vacinacao">Próxima vacinação</label>
+                <input type="password" name="prox-vacinacao" id="prox-vacinacao">
+            </div>
+
+            <button>
+                Cadastrar
+            </button>
+        </form>
+    </main>
+</body>
+</html>

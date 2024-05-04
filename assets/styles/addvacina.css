@@ -1,0 +1,47 @@
+.radios {
+    text-wrap: nowrap;
+    width: max-content;
+}
+
+
+.label-radio {
+    margin-left: 160px;
+}
+
+
+form{
+    position: absolute;
+    top:200px;
+    left:130px;
+    margin: 0;
+}
+
+input[type="radio"]{
+}
+
+label[for="imagem-vacina"]{
+    margin-left: -85px;
+}
+
+label[for="data-vacina"]{
+    margin-left: -18px
+}
+
+
+
+
+input[type="file"] {
+    display: none;
+  }
+  
+.subir-vacina {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px 12px;
+    cursor: pointer;
+    background-color: rgba(65, 158, 215, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(65, 158, 215, 1);
+    font-size: 24px;
+    text-align: left;
+}

@@ -1,0 +1,103 @@
+body {
+    width: 1440px;
+    height: 1024px;
+    width: 100%;
+    height: 91vh;
+    background: rgba(173, 212, 208, 1);
+}
+
+main {
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 200px;
+    width: 865px;
+    height: 582px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    height: 51px;
+    width: 586px;
+    font-size: 36px;
+    display: flex;
+    text-align: left;
+    color: rgba(63, 146, 197, 1);
+    padding: 0 10px;
+    border: none;
+}
+
+label{
+    min-width: 289px;
+    text-align: right;
+    align-items: center;
+    font-size: 36px;
+    margin-right: 25px;
+    margin-top:  5px;
+    color: white;
+}
+
+
+
+form div {
+    display: flex;
+    width: 849px;
+    height: 46px;
+    align-items: center;
+}
+
+form {
+    color: white;    
+    font-size: 30px;
+    text-align: center;
+    gap: 1em;
+}
+
+input[type="date"]{
+    width: 350px;
+    background-color: white;
+    background-image: url(/assets/img/calendario.png);
+    background-size: 38px;
+    background-position-x: 98%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+
+input[type="radio"]{
+    display: inline;
+    vertical-align: baseline;
+    width: 30px;
+    margin: 0 5px;
+}
+
+form button {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 24px;
+    width: 188px;
+    height: 50px;
+    border: 1px solid rgba(55, 189, 109, 1);
+    background: rgba(73, 185, 118, 1);
+    
+}
+
+.erro {
+    color: rgba(253, 121, 121, 1);
+    font-size: 24px;
+    position: absolute;
+    margin: 95px 0 0 313px;
+
+}
