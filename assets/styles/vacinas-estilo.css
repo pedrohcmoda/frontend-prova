@@ -1,0 +1,58 @@
+.pesquisa {
+    margin: 20px;
+
+}
+
+.pesquisa input[type="text"] {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    margin-right: 5px;
+    width: 1370px;
+    font-size: 24px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/1cf4/2516/e94cbba6c651479c7395ff40a8dcc485?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RrY6VH9bC~aesN1z5~oHjrOuMcCfxi0DKIrJA4cCSm6TXYpbmg9JYiQUdxLQ5YEYLpkryYV3zjn03te~D21BTzrANjWzk1yYOkzOnqz34WT0LjcHKu3n28XiYdxfBfHZ~~oHNJ9K1~oYtbQKtunTkHhorRRCkAbalxMuRz3FyE7Hns1hxWwPWVGfz4S1Vzrhrpubq6AJyz2~FMfXAymN~Ts-JEzkWRO7d045wzfkaHYNjJQkzTL3nyzajsUebyFsipwgI7lp5IK75vKxLuAJ6souhQlKoq7qBWdnjdjnVC6j175X3dmctUW11OnYbM3ZbXHiQ25o2hXhOAB0HA0SyQ__');
+    text-indent: 40px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-position-x: 10px;
+
+}
+
+.pesquisa button:hover {
+    background-color: #0056b3;
+}
+
+#searchResults {
+    margin: 20px;
+}
+
+
+main {
+    background-color: rgba(173, 212, 208, 1);
+    width: 1440px;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todas-vacinas {
+    margin-top: 25px;
+    width: 1123px;
+    height: 688px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 66px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+
+#nova_vacina {
+    background: rgba(73, 185, 118, 1);
+    border: 1px solid rgba(55, 189, 109, 1);
+    cursor: pointer;
+}

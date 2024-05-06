@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Averia Libre;
@@ -55,4 +55,20 @@ button {
     color: white;
     background: rgba(65, 158, 215, 1);
     margin: 0 20px 0 0px;
+}
+
+
+#todas-vacinas {
+    margin-top: 25px;
+    width: 1123px;
+    height: 688px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 8.2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
 }

@@ -32,13 +32,13 @@ input {
     border: none;
 }
 
-label{
+label {
     min-width: 289px;
     text-align: right;
     align-items: center;
     font-size: 36px;
     margin-right: 25px;
-    margin-top:  5px;
+    margin-top: 5px;
     color: white;
 }
 
@@ -52,13 +52,13 @@ form div {
 }
 
 form {
-    color: white;    
+    color: white;
     font-size: 30px;
     text-align: center;
     gap: 1em;
 }
 
-input[type="date"]{
+input[type="date"] {
     width: 350px;
     background-color: white;
     background-image: url(/assets/img/calendario.png);
@@ -76,7 +76,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     display: inline;
     vertical-align: baseline;
     width: 30px;
@@ -87,11 +87,10 @@ form button {
     text-align: center;
     padding: 0 15px;
     font-size: 24px;
-    width: 188px;
     height: 50px;
     border: 1px solid rgba(55, 189, 109, 1);
     background: rgba(73, 185, 118, 1);
-    
+
 }
 
 .erro {

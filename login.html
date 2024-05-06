@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>MyHealth - Login</title>
     <link rel="stylesheet" href="/assets/styles/login.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
-        <div class="logo">
+        <div id="logo" class="logo">
             <img src="/assets/img/icone-vacina.png" alt="Icone de seringa">
             <p>MyHealth</p>
         </div>
     </header>
     <main>
-        <form action="">
+        <form id="form-login">
             <div class="login">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" required>
             </div>
-            
-            <div class="pass">
+
+            <div class="pass" id="pass">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" required>
+                <input type="password" name="s  enha" id="senha" required>
             </div>
-           
+
             <button type="submit" class="">Entrar</button>
         </form>
-        
-        <button class="forgot">Esqueci minha senha</button>
+
+        <button class="forgot" onclick="window.location.href='recover.html'">Esqueci minha senha</button>
     </main>
 </body>
-</html>
+<script type="module" src="js/iniciar.js"></script>
+<script type="module" src="js/usuario.js"></script>
+<script>
+    var logo = document.getElementById("logo")
+    logo.addEventListener("click", () => {
+        document.location.href = "vacinas.html";
+    })
 
+    logo.style.cursor = "pointer";
+</script>
+
+</html>

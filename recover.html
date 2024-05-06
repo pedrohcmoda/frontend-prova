@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar Conta</title>
+    <title>MyHealth - Recuperar Conta</title>
+    <link rel="stylesheet" href="/assets/styles/criarconta.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="stylesheet" href="/assets/styles/recover.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
-        <div class="logo">
+        <div class="logo" id="logo">
             <img src="/assets/img/icone-vacina.png" alt="Icone de seringa">
             <p>MyHealth</p>
         </div>
-        <button>
+        <button onclick="window.location.href='login.html'">
             Já tenho conta
         </button>
     </header>
+    <main>
+        <form id="form-recover">
+            <div id="pass">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <button type="submit">
+                Redefinir senha
+            </button>
+        </form>
+    </main>
 </body>
+<script src="js/iniciar.js" type="module"></script>
+<script src="js/usuario.js" type="module"></script>
+<script>
+    var logo = document.getElementById("logo")
+    logo.addEventListener("click", () => {
+        document.location.href = "vacinas.html";
+    })
+
+    logo.style.cursor = "pointer";
+
+</script>
+
 </html>

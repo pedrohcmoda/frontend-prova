@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar vacin</title>
+    <title>MyHealth - Adicionando vacina</title>
     <link rel="stylesheet" href="/assets/styles/criarconta.css">
     <link rel="stylesheet" href="/assets/styles/addvacina.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <header id="header">
-        <div class="logo">
+        <div id="logo" class="logo">
             <img src="/assets/img/icone-vacina.png" alt="Icone de seringa">
             <p>MyHealth</p>
         </div>
         <div>
-            <button>
+            <button onclick="window.location.href='vacinas.html'">
                 Minhas vacinas
             </button>
-            <button>
+            <button id="logout">
                 Logout
             </button>
         </div>
     </header>
     <main>
-        <form onsubmit="login()">
+        <form id="form-vacina">
             <div>
                 <label for="data-vacina">Data da vascinação</label>
-                <input type="date" name="data-vacina" id="data-vacina">
+                <input type="date" name="data-vacina" id="data-vacina" required>
             </div>
             <div>
                 <label for="nome-vacina">Vacina</label>
-                <input type="text" name="nome-vacina" id="nome-vacina">
+                <input type="text" name="nome-vacina" id="nome-vacina" required>
             </div>
             <div class="radios">
                 <label class="label-radio" for="dose">Dose</label>
-                <input type="radio" name="dose" id="dose" value="1a"> 1a. Dose
-                <input type="radio" name="dose" id="dose" value="2a"> 2a. Dose
-                <input type="radio" name="dose" id="dose" value="3a"> 3a. Dose
-                <input type="radio" name="dose" id="dose" value="reforco"> Reforço
-                <input type="radio" name="dose" id="dose" value="unica"> Dose 
+                <input type="radio" name="dose" id="dose" value="1º Dose" required> 1a. Dose
+                <input type="radio" name="dose" id="dose" value="2º Dose" required> 2a. Dose
+                <input type="radio" name="dose" id="dose" value="3º Dose" required> 3a. Dose
+                <input type="radio" name="dose" id="dose" value="Dose de reforço" required> Reforço
+                <input type="radio" name="dose" id="dose" value="Dose única" required> Dose únic
             </div>
-            <div>
+            <div class="vacina">
                 <label for="imagem-vacina">Comprovante da vacina</label>
                 <label class="subir-vacina">
-                    <input type="file"/>
+                    <input type="file" id="file-vacina" required accept="image/*" />
                     Selecionar imagem...
+
+                    <img class="img-intra" id="img-vacina"
+                        src="https://www.creativefabrica.com/wp-content/uploads/2021/12/29/Upload-Logo-Graphics-22574991-1-1-580x386.jpg"
+                        alt="">
                 </label>
             </div>
             <div>
-                <img src="" alt="">
-            </div>
-            <div>
                 <label for="prox-vacinacao">Próxima vacinação</label>
-                <input type="password" name="prox-vacinacao" id="prox-vacinacao">
+                <input type="date" name="prox-vacinacao" id="prox-vacinacao">
             </div>
 
-            <button>
+            <button type="submit">
                 Cadastrar
             </button>
         </form>
+
     </main>
 </body>
+<script src="js/vacinas.js" type="module"></script>
+<script>
+    var logo = document.getElementById("logo")
+    logo.addEventListener("click", () => {
+        document.location.href = "vacinas.html";
+    })
+
+    logo.style.cursor = "pointer";
+</script>
+
 </html>

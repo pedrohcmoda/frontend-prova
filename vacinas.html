@@ -1,38 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacinas</title>
+    <title>MyHealth - Vacinas</title>
     <link rel="stylesheet" href="/assets/styles/style.css">
-    <link rel="stylesheet" href="/assets/styles/vacinas.css">
+    <link rel="stylesheet" href="/assets/styles/vacinas-estilo.css">
     <link rel="stylesheet" href="/assets/styles/card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
-        <div class="logo">
+        <div id="logo" class="logo">
             <img src="/assets/img/icone-vacina.png" alt="Icone de seringa">
             <p>MyHealth</p>
         </div>
         <div>
-            <button>
+            <button onclick="window.location.href='vacinas.html'">
                 Minhas vacinas
             </button>
-            <button>
+            <button id="logout">
                 Logout
             </button>
         </div>
     </header>
     <main>
         <div class="pesquisa">
-            <img src="https://s3-alpha-sig.figma.com/img/1cf4/2516/e94cbba6c651479c7395ff40a8dcc485?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RrY6VH9bC~aesN1z5~oHjrOuMcCfxi0DKIrJA4cCSm6TXYpbmg9JYiQUdxLQ5YEYLpkryYV3zjn03te~D21BTzrANjWzk1yYOkzOnqz34WT0LjcHKu3n28XiYdxfBfHZ~~oHNJ9K1~oYtbQKtunTkHhorRRCkAbalxMuRz3FyE7Hns1hxWwPWVGfz4S1Vzrhrpubq6AJyz2~FMfXAymN~Ts-JEzkWRO7d045wzfkaHYNjJQkzTL3nyzajsUebyFsipwgI7lp5IK75vKxLuAJ6souhQlKoq7qBWdnjdjnVC6j175X3dmctUW11OnYbM3ZbXHiQ25o2hXhOAB0HA0SyQ__" alt="Lupa de pesquisa">
-            <input type="text" id="pesquisar" placeholder="       PESQUISAR VACINA...">
+            <input type="text" id="pesquisar" placeholder="   PESQUISAR VACINA...">
         </div>
-        <div class="todas-vacinas">
+        <div id="todas-vacinas">
         </div>
+        <button id="nova_vacina" onclick="window.location.href='add-vacina.html'">Nova Vacina</button>
     </main>
 </body>
+<script src="js/iniciar.js" type="module"></script>
+<script src="js/usuario.js" type="module"></script>
+<script src="js/vacinas.js" type="module"></script>
+<script>
+    var logo = document.getElementById("logo")
+    logo.addEventListener("click", () => {
+        document.location.href = "vacinas.html";
+    })
+    logo.style.cursor = "pointer";
+
+</script>
+
 </html>

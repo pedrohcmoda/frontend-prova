@@ -9,22 +9,25 @@
 }
 
 
-form{
+form {
     position: absolute;
-    top:200px;
-    left:130px;
+    top: 200px;
+    left: 130px;
     margin: 0;
 }
 
-input[type="radio"]{
-}
 
-label[for="imagem-vacina"]{
+
+label[for="imagem-vacina"] {
     margin-left: -85px;
+    text-align: left;
+    text-wrap: nowrap;
 }
 
-label[for="data-vacina"]{
-    margin-left: -18px
+label[for="data-vacina"] {
+    margin-left: -18px;
+    text-align: left;
+    text-wrap: nowrap;
 }
 
 
@@ -32,11 +35,12 @@ label[for="data-vacina"]{
 
 input[type="file"] {
     display: none;
-  }
-  
+}
+
 .subir-vacina {
     border: 1px solid #ccc;
     display: inline-block;
+    width: 299px;
     padding: 10px 12px;
     cursor: pointer;
     background-color: rgba(65, 158, 215, 1);
@@ -44,4 +48,50 @@ input[type="file"] {
     border: 1px solid rgba(65, 158, 215, 1);
     font-size: 24px;
     text-align: left;
+}
+
+.subir-vacina img {
+    width: 325px;
+}
+
+form button {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+.img-intra {
+    position: absolute;
+    width: 299px;
+    height: 146px;
+    margin: 50px 150px 0 -232px;
+}
+
+label[for="prox-vacinacao"] {
+    text-align: left;
+    text-wrap: nowrap;
+    margin-left: -8px;
+}
+
+.vacina {
+    margin-bottom: 160px;
+}
+
+
+#excluir {
+    position: absolute;
+    top: 110px;
+    left: 89vw;
+    display: flex;
+    align-items: center;
+    background-color: rgba(253, 121, 121, 1);
+    border: 1px solid rgba(253, 121, 121, 1);
+}
+
+#excluir img {
+    width: 28px;
+    margin: 3px 10px 3px 0px;
 }
